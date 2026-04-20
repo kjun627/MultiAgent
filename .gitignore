@@ -4,5 +4,6 @@
 assets/
 agent/__pycache__/
 __pycache__/
+tmp/
 
 AGENTS.md
