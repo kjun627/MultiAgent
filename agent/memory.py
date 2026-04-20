@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 console = Console()
 load_dotenv()
 class Memory:
-    def __init__(self, name, max_memeory=1024):
-        self.max_memory = max_memeory
+    def __init__(self, name, max_memory=1024):
+        self.max_memory = max_memory
         self.name = name
         self.summarization_llm = LLM(system_desc=f"""
                                      your task is to briefly summarize the conversation history without losing important information.
