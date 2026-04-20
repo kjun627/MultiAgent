@@ -1,3 +1,7 @@
+# directory and virtual environment
 .venv
 .env
 assets/
+agent/__pycache__/
+
+AGENTS.md
