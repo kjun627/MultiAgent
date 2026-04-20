@@ -74,8 +74,8 @@ class Agent252DWithMemory(Agent252DBase):
         else:
             response, code = self.generate_response(input)
             
-        summary = self.core.summarize(input.response)
+        summary = self.core.summarize(input, response)
         self.chat_history.commit(f"{self.name}: {summary}")
-        console.print(f"{self.name}: {response}", style='blude')
+        console.print(f"{self.name}: {response}", style='blue')
         
         return summary

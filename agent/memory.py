@@ -14,13 +14,13 @@ class Memory:
                                      """,
                                      response_format="text"
                                      )
-        self.memeory = ""
+        self.memory = ""
         
     def compute_tokens(self, text):
         return len(text.split())
     
     def fetch(self):
-        return self.memeory
+        return self.memory
     
     def commit(self, event):
         self.memory += event + "\n"
