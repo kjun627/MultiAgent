@@ -3,5 +3,6 @@
 .env
 assets/
 agent/__pycache__/
+__pycache__/
 
 AGENTS.md
